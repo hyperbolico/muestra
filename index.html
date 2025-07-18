@@ -49,6 +49,7 @@
     const hydra = new Hydra({ detectAudio: false });
 
     const palabras = {
+      piedra: () => voronoi(2, 0.5, 2).colorama(0.1),
       paco: () => osc(2, 0.5, 2).colorama(0.1),
       kenya: () => noise(2, 0.5, 2).colorama(-0.9),
       fuego: () => noise(6, 0.5, 2).colorama(0.2).modulateScale(o0, 0.8),
